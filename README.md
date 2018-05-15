@@ -13,11 +13,11 @@ npm install aria-roles --save
 Use this package in places where you'd use ARIA role strings.
 
 ```javascript
-<div class="menuItem" role={Roles.Menuitem}/>
+<div class="menuItem" role={Roles.MenuItem}/>
 ```
 
 Resolves to
 
 ```javascript
-<div class="menuItem" role="textbox"/>
+<div class="menuItem" role="menuitem"/>
 ```
