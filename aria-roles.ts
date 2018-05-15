@@ -4,6 +4,14 @@
  */
 export const Roles = {
 	/**
+	 * A type of live region with important, and usually time-sensitive, information.
+	 */
+	Alert: "alert",
+	/**
+	 * A type of dialog that contains an alert message, where initial focus goes to an element within the dialog.
+	 */
+	AlertDialog: "alertdialog",
+	/**
 	 * A structure containing one or more focusable elements requiring user input, 
 	 * such as keyboard or gesture events, that do not follow a standard interaction pattern 
 	 * supported by a widget role.
@@ -23,9 +31,17 @@ export const Roles = {
 	 */
 	Button: "button",
 	/**
+	 * 	A cell in a tabular container.
+	 */
+	Cell: "cell",
+	/**
 	 * A checkable input that has three possible values: true, false, or mixed.
 	 */
 	Checkbox: "checkbox",
+	/**
+	 * A cell containing header information for a column.
+	 */
+	ColumnHeader: "columnheader",
 	/**
 	 * A presentation of a select; usually similar to a textbox where users can type 
 	 * ahead to select an option, or type to enter arbitrary text as a new item in the list.
@@ -40,7 +56,7 @@ export const Roles = {
 	/**
 	 * A large perceivable region that contains information about the parent document.
 	 */
-	Contentinfo: "contactinfo",
+	ContentInfo: "contactinfo",
 	/**
 	* A definition of a term or concept.
 	*/
@@ -60,6 +76,16 @@ export const Roles = {
 	 */
 	Document: "document",
 	/**
+	 * A scrollable list of articles where scrolling may cause articles to
+	 * be added to or removed from either end of the list.
+	 */
+	Feed: "feed",
+	/**
+	 * A perceivable section of content that typically contains 
+	 * a graphical document, images, code snippets, or example text.
+	 */
+	Figure: "figure",
+	/**
 	 * A landmark region that contains a collection of items and objects that, as a whole,
 	 * combine to create a form.
 	 */
@@ -71,7 +97,7 @@ export const Roles = {
 	/**
 	 * A cell in a grid or treegrid.
 	 */
-	Gridcell: "gridcell",
+	GridCell: "gridcell",
 	/**
 	 * A set of user interface objects which are not intended to be included in a
 	 * page summary or table of contents by assistive technologies.
@@ -101,9 +127,10 @@ export const Roles = {
 	/**
 	 * A single item in a list or directory.
 	 */
-	Listitem: "listitem",
+	ListItem: "listitem",
 	/**
-	 * A type of live region where new information is added in meaningful order and old information may disappear.
+	 * A type of live region where new information is added in 
+	 * meaningful order and old information may disappear.
 	 */
 	Log: "log",
 	/**
@@ -129,15 +156,15 @@ export const Roles = {
 	/**
 	 * An option in a group of choices contained by a menu or menubar.
 	 */
-	Menuitem: "menuitem",
+	MenuItem: "menuitem",
 	/**
 	 * A checkable menuitem that has three possible values: true, false, or mixed.
 	 */
-	Menuitemcheckbox: "menuitemcheckbox",
+	MenuItemCheckbox: "menuitemcheckbox",
 	/**
 	 * A checkable menuitem in a group of menuitemradio roles, only one of which can be checked at a time.
 	 */
-	Menuitemradio: "menuitemradio",
+	MenuItemRadio: "menuitemradio",
 	/**
 	 * A collection of navigational elements (usually links) for navigating the document or related documents.
 	 */
@@ -152,12 +179,13 @@ export const Roles = {
 	Option: "option",
 	/**
 	 * An element whose implicit native role semantics will not be mapped to the accessibility API.
+	 * Also known as 'none'.
 	 */
 	Presentation: "presentation",
 	/**
 	 * An element that displays the progress status for tasks that take a long time.
 	 */
-	Progressbar: "progressbar",
+	ProgressBar: "progressbar",
 	/**
 	 * A checkable input in a group of radio roles, only one of which can be checked at a time.
 	 */
@@ -172,6 +200,18 @@ export const Roles = {
 	 */
 	Region: "region",
 	/**
+	 * A row of cells in a tabular container.
+	 */
+	Row: "row",
+	/**
+	 * A group containing one or more row elements in a grid.
+	 */
+	RowGroup: "rowgroup",
+	/**
+	 * A cell containing header information for a row in a grid.
+	 */
+	RowHeader: "rowheader",
+	/**
 	 * A graphical object that controls the scrolling of content within a viewing area, 
 	 * regardless of whether the content is fully displayed within the viewing area.
 	 */
@@ -181,6 +221,10 @@ export const Roles = {
 	 * as a whole, combine to create a search facility.
 	 */
 	Search: "search",
+	/**
+	 * A type of textbox intended for specifying search criteria.
+	 */
+	SearchBox: "searchbox",
 	/**
 	 * A divider that separates and distinguishes sections of content or groups of menuitems.
 	 */
@@ -192,24 +236,37 @@ export const Roles = {
 	/**
 	 * A form of range that expects the user to select from among discrete choices.
 	 */
-	Spinbutton: "spinbutton",
+	SpinButton: "spinbutton",
 	/**
 	 * A container whose content is advisory information for the user but is not important enough to justify an alert,
 	 * often but not necessarily presented as a status bar.
 	 */
 	Status: "status",
 	/**
+	 * A type of checkbox that represents on/off values, as opposed to checked/unchecked values.
+	 */
+	Switch: "switch",
+	/**
 	 * A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.
 	 */
 	Tab: "tab",
 	/**
+	 * A section containing data arranged in rows and columns. The table role is 
+	 * intended for tabular containers which are not interactive.
+	 */
+	Table: "table",
+	/**
 	 * A list of tab elements, which are references to tabpanel elements.
 	 */
-	Tablist: "tablist",
+	TabList: "tablist",
 	/**
 	 * A container for the resources associated with a tab, where each tab is contained in a tablist.
 	 */
-	Tabpanel: "tabpanel",
+	TabPanel: "tabpanel",
+	/**
+	 * 	A word or phrase with a corresponding definition.
+	 */
+	Term: "term",
 	/**
 	 * Input that allows free-form text as its value.
 	 */
@@ -239,9 +296,5 @@ export const Roles = {
 	 * An option item of a tree. This is an element within a tree that may be expanded or 
 	 * collapsed if it contains a sub-level group of treeitems.
 	 */
-	Treeitem: "treeitem",
-	/**
-	 * A type of checkbox that represents on/off values, as opposed to checked/unchecked values.
-	 */
-	Switch: "switch",
+	TreeItem: "treeitem",
 };
