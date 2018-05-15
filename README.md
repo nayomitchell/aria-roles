@@ -12,6 +12,14 @@ npm install aria-roles --save
 
 Use this package in places where you'd use ARIA role strings.
 
+At the top of your file, add the following:
+
+```javascript
+import { Roles } from aria-roles;
+```
+
+Then you can use the values wherever they're needed:
+
 ```javascript
 <div class="menuItem" role={Roles.MenuItem}/>
 ```
