@@ -1,0 +1,24 @@
+{
+  "name": "aria-roles",
+  "version": "1.0.0",
+  "description": "A map of aria role strings.",
+  "main": "aria-roles.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayomitchell/aria-roles.git"
+  },
+  "keywords": [
+    "aria",
+    "accessibility",
+    "aria-role"
+  ],
+  "author": "Nayomi Mitchell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nayomitchell/aria-roles/issues"
+  },
+  "homepage": "https://github.com/nayomitchell/aria-roles#readme"
+}
