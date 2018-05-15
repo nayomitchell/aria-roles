@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/nayomitchell/aria-roles/issues"
   },
+  "types": "aria-roles.d.ts",
   "homepage": "https://github.com/nayomitchell/aria-roles#readme"
 }
