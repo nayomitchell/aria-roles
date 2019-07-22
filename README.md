@@ -1,6 +1,6 @@
 # aria-roles
 
-A object of aria roles and their descriptions, as detailed by [ARIA](https://www.w3.org/TR/html-aria/#allowed-aria-roles-states-and-properties).
+An object of aria roles and their descriptions, as detailed by [ARIA](https://www.w3.org/TR/html-aria/#allowed-aria-roles-states-and-properties).
 
 ## Installation
 
